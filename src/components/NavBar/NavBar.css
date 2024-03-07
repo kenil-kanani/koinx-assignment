@@ -1,0 +1,55 @@
+.navbar {
+    width: full;
+    height: 70px;
+    background-color: #FFFFFF;
+    padding: 0 50px;
+    display: flex;
+    border-bottom: 1px solid #DEDFE2;
+}
+
+.navbar-lists {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    gap: 40px;
+    background-color: #FFFFFF;
+}
+
+.navbar-lists li {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.navbar-image {
+    width: 110px;
+    height: 25px;
+    margin: auto 0;
+}
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    margin: auto 0 auto auto;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+    .navbar-lists {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-lists {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+}
